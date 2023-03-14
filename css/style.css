@@ -86,12 +86,37 @@ main {
     width: 98%;
 }
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
-    color: #0E050F;
+    color: rgb(166, 0, 255);
 }
 .swiper .swiper-pagination-bullet-active {
-    background: #0E050F;
+    background: rgb(166, 0, 255);
 }
 .swiper-slide {
+    /* padding: 40px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+#s-slide-1 {
+    background-image: url(../img/food-1.jpg);
+}
+#s-slide-2 {
+    background-image: url(../img/food-2.jpg);
+}
+#s-slide-3 {
+    background-image: url(../img/food-3.jpg);
+}
+#s-slide-4 {
+    background-image: url(../img/food-4.jpg);
+}
+.swiper-slide-home {
+    background-color: rgba(0,0,0,.7);
+    color: rgb(232, 188, 255);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px;
 }
 @media (max-width:728px) {
