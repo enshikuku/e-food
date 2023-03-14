@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <div class="nav">
+            <div class="nav container">
                 <input type="checkbox" id="nav-check">
                 <div class="nav-header">
                     <div class="nav-title"><a href="#"><img src="img/restaurant.png" alt=""> E-FOOD</a></div>
@@ -25,14 +25,14 @@
                 </div>
                 <div class="nav-links">
                     <a href="#home">HOME</a>
-                    <a href="#">RESERVE</a>
-                    <a href="#">MENU</a>
+                    <a href="#menu">MENU</a>
                     <a href="#">RECIPE</a>
+                    <a href="#">RESERVE</a>
                     <a href="#">CONTACT</a>
                 </div>
               </div>
         </header>
-        <main id="home">
+        <main id="home" class="container">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" id="s-slide-0">
@@ -66,6 +66,33 @@
                 <div class="swiper-button-next"></div>
             </div>
         </main>
+        <div id="menu" class="container">
+            
+    <div>
+        <h1>MENU</h1>
+        <p class="mealTypes">Appetizers:</p>
+        <section class="meals">
+            <ol>
+                <li>Samosas - Crispy pastry filled with spiced vegetables or meat.</li>
+                <li>Mshikaki - Skewered meat, usually chicken or beef, marinated in a spicy sauce</li>
+                <li>Kachumbari - Tomato and onion salad with lemon and chili peppers.</li>
+                <li>Mahamri - Sweet fried bread made with coconut milk and served with hot tea.</li>
+            </ol>
+        </section>
+        <p class="mealTypes">Entrees:</p>
+        <section class="meals">
+            <p>.</p>
+        </section>
+        <p class="mealTypes">Desserts:</p>
+        <section class="meals">
+            <p>.</p>
+        </section>
+        <p class="mealTypes">Beverages:</p>
+        <section class="meals">
+            <p>.</p>
+        </section>
+    </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
     </body>

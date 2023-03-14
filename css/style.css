@@ -17,7 +17,9 @@
     font-family: 'My Extra Light';
     src: url('SourceSansPro-ExtraLight.ttf');
 }
-
+.container {
+    padding: 0 30px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -77,26 +79,28 @@
     display: none;
 }
 main {
-    height: 100vh;
+    height: 83vh;
+    background-color: #EAE7FA;
 }
 .swiper {
     border: 1px solid black;
     height: 83vh;
-    margin-top: 5px;
-    width: 98%;
+    /* margin-top: 5px; */
+    width: 70%;
+    /* min-width: 700px; */
 }
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
-    color: rgb(166, 0, 255);
+    color: #D9A1A0;
 }
 .swiper .swiper-pagination-bullet-active {
-    background: rgb(166, 0, 255);
+    background: #D9A1A0;
 }
 .swiper-slide {
     /* padding: 40px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    /* color: #fff; */
 }
 #s-slide-0 {
     background-image: url(../img/food-0.jpg);
@@ -115,7 +119,7 @@ main {
 }
 .swiper-slide-home {
     background-color: rgba(0,0,0,.7);
-    color: rgb(232, 188, 255);
+    color: #D9A1A0;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -175,5 +179,8 @@ main {
     .nav #nav-check:checked ~ .nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
+    }
+    .swiper {
+        width: 100%;
     }
 }
