@@ -98,6 +98,9 @@ main {
     background-size: cover;
     color: #fff;
 }
+#s-slide-0 {
+    background-image: url(../img/food-0.jpg);
+}
 #s-slide-1 {
     background-image: url(../img/food-1.jpg);
 }
@@ -117,7 +120,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 45px;
 }
 @media (max-width:728px) {
     .nav {
