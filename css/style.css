@@ -135,6 +135,7 @@ main {
         overflow-y: hidden;
         top: 50px;
         left: 0px;
+        z-index: 99;
     }
     .nav .nav-links a {
         display: block;
