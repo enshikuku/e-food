@@ -1,0 +1,150 @@
+/* 
+    #A58CB3 links
+    #EAE7FA  #D9A1A0 backgrounds
+    #0E050F font
+*/
+@font-face {
+    font-family: 'My Regular';
+    src: url('SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'My Bold';
+    src: url('SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'My Extra Light';
+    src: url('SourceSansPro-ExtraLight.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'My Regular';
+}
+.nav {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9A1A0;
+    position: relative;
+}
+.nav .nav-header {
+    display: inline;
+}
+.nav .nav-header .nav-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-size: 45px;
+    color: #0E050F;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+.nav .nav-header .nav-title img {
+    height: 48px;
+}
+.nav .nav-btn {
+    display: none;
+}
+.nav .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+.nav .nav-links a {
+    display: inline-block;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0E050F;
+    border-radius: 10px;
+    background-color: none;
+    transition: .8s;
+}
+.nav .nav-links a:hover {
+    transition: .4s;
+    background-color: rgba(197, 95, 252, 0.5);
+    border-radius: 15px;
+}
+.nav #nav-check {
+    display: none;
+}
+main {
+    height: 100vh;
+}
+.swiper {
+    border: 1px solid black;
+    height: 83vh;
+    margin-top: 5px;
+    width: 98%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: #0E050F;
+}
+.swiper .swiper-pagination-bullet-active {
+    background: #0E050F;
+}
+.swiper-slide {
+    padding: 40px;
+}
+@media (max-width:728px) {
+    .nav {
+        height: 70px;
+    }
+    .nav .nav-header .nav-title {
+        font-size: 30px;
+    }
+    .nav .nav-header .nav-title img {
+        height: 32px;
+    }
+    .nav .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav .nav-btn label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav .nav-btn label:hover,.nav  #nav-check:checked ~ .nav-btn label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav .nav-btn label span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #D9A1A0;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav .nav-links a {
+        display: block;
+        width: 100%;
+    }
+    .nav #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
