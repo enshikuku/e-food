@@ -15,8 +15,8 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     }
 });
-let mealTypes = document.querySelectorAll('.mealTypes')
-let meals = document.querySelectorAll('.meals')
+// let mealTypes = document.querySelectorAll('.mealTypes')
+// let meals = document.querySelectorAll('.meals')
 
 mealTypes.forEach(mealType => {
     mealType.addEventListener('click', () => {
