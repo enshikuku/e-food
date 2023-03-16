@@ -29,17 +29,21 @@ showPage(currentPage);
 
 // Add event listeners to the buttons
 prevBtn.addEventListener('click', () => {
-  if (currentPage > 0) {
+  if (currentPage === 0) {
+    currentPage = pages.length - 1;
+  } else {
     currentPage--;
-    showPage(currentPage);
   }
+  showPage(currentPage);
 });
 
 nextBtn.addEventListener('click', () => {
-  if (currentPage < pages.length - 1) {
+  if (currentPage === pages.length - 1) {
+    currentPage = 0;
+  } else {
     currentPage++;
-    showPage(currentPage);
   }
+  showPage(currentPage);
 });
 
 // Function to show the current page
