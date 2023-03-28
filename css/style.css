@@ -164,6 +164,8 @@ main {
 }
 .swiperMenu {
     border: 2px solid #D9A1A0;
+    padding-top: 0;
+    padding-bottom: 0;
     border-radius: 15px;
     height: 90vh;
     width: 90%;
@@ -178,7 +180,7 @@ main {
     display: flex;
     width: 100%;
     border: 2px solid black;
-    font-family: 'My Bold';
+    font-size: 23px;
     justify-content: space-between;
 }
 table {
