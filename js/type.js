@@ -34,7 +34,7 @@ let typed4 = new Typed(".auto-input-4", {
     showCursor: true,
     cursorChar: '',
 })
-let typed5 = new Typed(".auto-input-5", {
+let typed5 = new Typed(".auto-input-6", {
     strings: [ "Kenyan Tea", "Tusker Beer", "Mango Juice", "Masala Chai"],
     typeSpeed: 60,
     backSpeed:60,

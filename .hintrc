@@ -18,6 +18,12 @@
         "label": "off"
       }
     ],
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "axe/aria": [
+      "default",
+      {
+        "empty-table-header": "off"
+      }
+    ]
   }
 }
