@@ -139,7 +139,7 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 45px;
 }
@@ -154,7 +154,7 @@ main {
     color: #D9A1A0;
 }
 .menusContainer {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -162,14 +162,37 @@ main {
     justify-content: space-evenly;
     padding: 10px;
 }
+.swiperMenu {
+    border: 2px solid #D9A1A0;
+    border-radius: 15px;
+    height: 90vh;
+    width: 90%;
+}
 .menusContainer-1 {
     text-align: center;
 }
 .meals {
     text-align: left;
 }
-.project-titles {
-    text-align: left;
+.project-titles-menu {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    font-family: 'My Bold';
+    justify-content: space-between;
+}
+table {
+    height: 85%;
+    width: 100%;
+}
+th {
+    font-family: 'My Bold';
+    border-bottom: 2px solid #D9A1A0;
+}
+td {
+    padding-left: 15px;
+    border-bottom: 2px solid #D9A1A0;
+    font-family: 'My Extra Light';
 }
 @media (max-width:728px) {
     .nav {

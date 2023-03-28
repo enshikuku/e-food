@@ -17,6 +17,7 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "detect-css-reflows/layout": "off"
   }
 }
