@@ -84,12 +84,15 @@ main {
 }
 .home-main {
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     margin: auto;
     text-align: center;
     text-transform: uppercase;
 }
-.swiper {
+.swiperHome {
     border: 2px solid #D9A1A0;
     border-radius: 15px;
     height: 90vh;
@@ -131,6 +134,15 @@ main {
     align-items: center;
     padding: 45px;
 }
+.swiper-slide-home-1 {
+    color: #D9A1A0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
 .swiper-slide-home h1 {
     position: relative;
     top: -80px;
@@ -138,67 +150,26 @@ main {
 #menus {
     background-image: url(../img/menu.jpg);
     padding: 0;
-}
-#menu-home {
     height: 100vh;
-    width: 100%;
-    padding: 40px;
-    background-color: rgba(0,0,0,.7);
     color: #D9A1A0;
+}
+.menusContainer {
+    background-color: rgba(0,0,0,.7);
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    font-size: 22px;
     justify-content: space-evenly;
-    align-items: center;
+    padding: 10px;
+}
+.menusContainer-1 {
+    text-align: center;
+}
+.meals {
+    text-align: left;
 }
 .project-titles {
-    font-size: 45px;
-    text-transform: uppercase;
-    animation: slide-in 3s forwards;
-}
-#menus .menuPage {
-    display: none;
-    border: 2px solid red;
-    height: 70%;
-    width: 90%;
-    /* text-align: center; */
-}
-#menus .active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-#menus .menuButtons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-    min-width: 300px;
-    position: static;
-    top: 10px;
-}
-#menus button {
-    border: 1px solid #0E050F;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#menus button img {
-    height: 30px;
-}
-  
-@keyframes slide-in {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
+    text-align: left;
 }
 @media (max-width:728px) {
     .nav {
@@ -257,7 +228,7 @@ main {
     .swiper, .home-main {
         width: 100%;
     }
-    .text-animation {
-        height: fit-content;
+    .menusContainer {
+        font-size: 17px;
     }
 }
