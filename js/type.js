@@ -14,7 +14,7 @@ let typed2 = new Typed(".auto-input-2", {
     loop:true,
     backDelay: 1100,
     showCursor: true,
-    cursorChar: '|',
+    cursorChar: '',
 })
 let typed3 = new Typed(".auto-input-3", {
     strings: [ "Nyama Choma", "Pilau", "Githeri", "Sukuma Wiki", "Irio"],
@@ -23,7 +23,7 @@ let typed3 = new Typed(".auto-input-3", {
     loop:true,
     backDelay: 1100,
     showCursor: true,
-    cursorChar: '|',
+    cursorChar: '',
 })
 let typed4 = new Typed(".auto-input-4", {
     strings: [ "Mandazi", "Kaimati", "Mutura"],
@@ -32,7 +32,7 @@ let typed4 = new Typed(".auto-input-4", {
     loop:true,
     backDelay: 1100,
     showCursor: true,
-    cursorChar: '|',
+    cursorChar: '',
 })
 let typed5 = new Typed(".auto-input-5", {
     strings: [ "Kenyan Tea", "Tusker Beer", "Mango Juice", "Masala Chai"],
@@ -41,5 +41,5 @@ let typed5 = new Typed(".auto-input-5", {
     loop:true,
     backDelay: 1100,
     showCursor: true,
-    cursorChar: '|',
+    cursorChar: '',
 })

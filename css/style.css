@@ -163,7 +163,6 @@ main {
     padding: 10px;
 }
 .swiperMenu {
-    border: 2px solid #D9A1A0;
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 15px;
@@ -179,7 +178,6 @@ main {
 .project-titles-menu {
     display: flex;
     width: 100%;
-    border: 2px solid black;
     font-size: 23px;
     justify-content: space-between;
 }
@@ -192,7 +190,7 @@ th {
     border-bottom: 2px solid #D9A1A0;
 }
 td {
-    padding-left: 15px;
+    padding-left: 7px;
     border-bottom: 2px solid #D9A1A0;
     font-family: 'My Extra Light';
 }
