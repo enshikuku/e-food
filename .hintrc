@@ -24,6 +24,7 @@
       {
         "empty-table-header": "off"
       }
-    ]
+    ],
+    "button-type": "off"
   }
 }
