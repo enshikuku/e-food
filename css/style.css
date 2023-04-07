@@ -29,8 +29,8 @@
     border: 2px double black;
     outline: none;
     background-color: #D9A1A0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     padding: 2px;
     border-radius: 50%;
@@ -219,6 +219,72 @@ td {
 .bodabotom {
     border-bottom: 5px solid #D9A1A0;
 }
+#order {
+    padding: 10px;
+}
+#order h1 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 5px;
+}
+#order h2 {
+    text-align: center;
+}
+.ordercontmainorder {
+    border: 1px solid black;
+    margin: 10px 0;
+}
+.ordercontmainorder input[type='submit'] {
+    border: 2px solid #0E050F;
+    background-color: #0E050F;
+    color: #D9A1A0;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding:  1px 5px;
+    border-radius: 15px;
+}
+.ordercontmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.ordercontmainimg {
+    width: 196px;
+    border-radius: 20px 20px 0 0;
+}
+.orderItem {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px double #D9A1A0;
+    border-radius: 20px;
+}
+.orderItem input {
+    width: 30px;
+    height: 30px;
+}
+.orderItemMain {
+    display: flex;
+    width: 200px;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.orderItemMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+.orderItem .priceTagOrder, .orderItem .quantity {
+    font-size: 20px;
+    text-transform: uppercase;
+}
 @media (max-width:728px) {
     .nav {
         height: 70px;
@@ -284,7 +350,8 @@ td {
     .container {
         padding: 0;
     }
-    .menusContainer {
+    .menusContainer, #menus {
         font-size: 17px;
+        height: fit-content;
     }
 }
