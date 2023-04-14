@@ -384,7 +384,7 @@ td {
 #thankyoumessage p {
     margin: 0 0 10px 0;
 }
-#bodythanks {
+.bodythanks {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -525,7 +525,7 @@ footer {
     .col {
         width: 100%;
     }
-    #bodythanks  {
+    .bodythanks  {
         height: fit-content;
     }
 }
