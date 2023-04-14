@@ -34,8 +34,12 @@
         <img src="img/top.png" id="scrollToTopBtn" alt="">
         <div id="order" class="container bodabotom">
             <h1>Place Your Order Now!</h1>
-            <form id="orderzawatu">
+            <form id="orderzawatu" action="https://formsubmit.co/emmanuelnabwanashikuku@gmail.com" method="post">
                 <input type="submit" value="Submit Order">
+                <input type="hidden" name="_subject" value="New Message from E-FOOD!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://shikuku39.github.io/e-food/thanksorder.html">
+                <button type="submit">Send Message</button>
             </form>
             <div class="ordercontmainorder">
                 <h2>Appetizers</h2>
@@ -149,9 +153,9 @@
                         <input type="email" id="contactemail" name="contactemail" required><br>
                         <label for="contactmessage">Message:</label>
                         <textarea id="contactmessage" name="contactmessage" required></textarea><br>
-                        <input type="hidden" name="_subject" value="NEW ORDER: E-FOOD!">
+                        <input type="hidden" name="_subject" value="New Message from E-FOOD!">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://shikuku39.github.io/mentor-match/thanks.html">
+                        <input type="hidden" name="_next" value="https://shikuku39.github.io/e-food/thanks.html">
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
