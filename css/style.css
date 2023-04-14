@@ -439,6 +439,15 @@ button[type="submit"]:hover {
     height: 100%;
     border: none;
 }  
+.orderdeletebtn {
+    width: 30%;
+    font-size: 16px;
+    border: 1px solid #900020;
+    color: white;
+    background-color: #900020;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
 footer {
     height: 50px;
     color: #D9A1A0;

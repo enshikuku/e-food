@@ -174,7 +174,6 @@
         <script>
             const orderzawatuForm = document.querySelector('#orderzawatu')
             const orderItems = document.querySelectorAll('.orderItem')
-
             orderItems.forEach(item => {
                 const addButton = item.querySelector('button')
                 const itemName = item.querySelector('h3').textContent
@@ -182,20 +181,43 @@
                     orderzawatuForm.style.display = "flex"
                     const inputExists = orderzawatuForm.querySelector(`input[name="${itemName}"]`)
                     if (inputExists) {
-                        const inputNumber = parseInt(inputExists.value) + 1
+                        let inputNumber = parseInt(inputExists.value) + 1
                         inputExists.value = inputNumber
                         const paragraph = orderzawatuForm.querySelector(`p[data-item="${itemName}"]`)
                         paragraph.textContent = `${itemName}: ${inputNumber}`
+    
+                        const deleteButton = paragraph.nextElementSibling
+                        deleteButton.addEventListener('click', () => {
+                            inputNumber--
+                            inputExists.value = inputNumber
+                            paragraph.textContent = `${itemName}: ${inputNumber}`
+                            if (inputNumber === 0) {
+                                orderzawatuForm.removeChild(inputExists)
+                                orderzawatuForm.removeChild(paragraph)
+                                orderzawatuForm.removeChild(deleteButton)
+                            }
+                        })
                     } else {
                         const hiddenInput = document.createElement('input')
                         hiddenInput.setAttribute('type', 'hidden')
                         hiddenInput.setAttribute('name', itemName)
                         hiddenInput.setAttribute('value', '1')
                         orderzawatuForm.appendChild(hiddenInput)
+    
                         const paragraph = document.createElement('p')
                         paragraph.setAttribute('data-item', itemName)
                         paragraph.textContent = `${itemName}: 1`
                         orderzawatuForm.appendChild(paragraph)
+    
+                        const deleteButton = document.createElement('button')
+                        deleteButton.textContent = 'Delete'
+                        deleteButton.classList.add('orderdeletebtn')
+                        deleteButton.addEventListener('click', () => {
+                            orderzawatuForm.removeChild(hiddenInput)
+                            orderzawatuForm.removeChild(paragraph)
+                            orderzawatuForm.removeChild(deleteButton)
+                        })
+                        orderzawatuForm.appendChild(deleteButton)
                     }
                 })
             })
