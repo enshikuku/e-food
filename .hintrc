@@ -25,6 +25,15 @@
         "empty-table-header": "off"
       }
     ],
-    "button-type": "off"
+    "button-type": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }

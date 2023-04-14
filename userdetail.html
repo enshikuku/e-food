@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-FOOD</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="bodabotom">
+            <div class="nav container">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title"><a href="#"><img src="img/restaurant.png" alt=""> E-FOOD</a></div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html#home" onclick="closeNav()">HOME</a>
+                    <a href="index.html#menus" onclick="closeNav()">MENU</a>
+                    <a href="order.html#order" onclick="closeNav()">ORDER</a>
+                    <a href="#contact" onclick="closeNav()">CONTACT</a>
+                </div>
+            </div>
+        </header>
+        <img src="img/top.png" id="scrollToTopBtn" alt="">
+        <form action="https://formsubmit.co/emmanuelnabwanashikuku@gmail.com" method="post" class="order-form">
+            <h2>Input your Detais to complete the order</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>          
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="pickup-time">Pickup Time:</label>
+                <input type="datetime-local" id="pickup-time" name="pickup-time" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>  
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col">
+                    <form action="https://formsubmit.co/emmanuelnabwanashikuku@gmail.com" method="post">
+                        <label for="contactname">Name:</label>
+                        <input type="text" id="contactname" name="contactname" required><br>
+                        <label for="contactemail">Email:</label>
+                        <input type="email" id="contactemail" name="contactemail" required><br>
+                        <label for="contactmessage">Message:</label>
+                        <textarea id="contactmessage" name="contactmessage" required></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1KXwFhPNloQPOlhotUE708v8Bk7qZMm0&ll=0.5847499996396424%2C35.30786589999999&z=18" frameborder="0" allowfullscreen></iframe>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1761.1092763241045!2d35.30809337954685!3d0.5848086829275466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178105d36614da55%3A0xc04309be82e63718!2sK-5%20Cafe!5e1!3m2!1sen!2ske!4v1681473668621!5m2!1sen!2ske" frameborder="0" style="border:0" allowfullscreen=""></iframe> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>E-FOOD &copy;2023 </p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="js/type.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

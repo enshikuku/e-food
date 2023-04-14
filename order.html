@@ -27,263 +27,173 @@
                     <a href="index.html#home" onclick="closeNav()">HOME</a>
                     <a href="index.html#menus" onclick="closeNav()">MENU</a>
                     <a href="#order" onclick="closeNav()">ORDER</a>
-                    <a href="#" onclick="closeNav()">RECIPE</a>
-                    <a href="#" onclick="closeNav()">CONTACT</a>
+                    <a href="#contact" onclick="closeNav()">CONTACT</a>
                 </div>
             </div>
         </header>
         <img src="img/top.png" id="scrollToTopBtn" alt="">
         <div id="order" class="container bodabotom">
             <h1>Place Your Order Now!</h1>
-            <form class="ordercontmainorder">
+            <form id="orderzawatu">
+                <input type="submit" value="Submit Order">
+            </form>
+            <div class="ordercontmainorder">
                 <h2>Appetizers</h2>
                 <div class="ordercontmain">
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898962/E-FOOD/samosa_nru8mo.jpg" class="ordercontmainimg" alt="">
                         <h3>Samosa</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 30</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Samosa">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898961/E-FOOD/mshikaki_aaijcs.jpg" class="ordercontmainimg" alt="">
                         <h3>Mshikaki</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 60</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Mshikaki">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898963/E-FOOD/kachumbari_b6i6zm.jpg" class="ordercontmainimg" alt="">
                         <h3>Kachumbari</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 45</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Kachumbari">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898962/E-FOOD/mahamri_vatlbp.jpg" class="ordercontmainimg" alt="">
                         <h3>Mahamri</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 34</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Mahamri">add</button>
                     </div>
                 </div>
-                <input type="submit" value="Order Appertizer">
-            </form>
-            <form class="ordercontmainorder">
+            </div>
+            <div class="ordercontmainorder">
                 <h2>Entrees</h2>
                 <div class="ordercontmain">
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898999/E-FOOD/nyamachoma_boom0j.jpg" class="ordercontmainimg" alt="">
                         <h3>Nyama Choma</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 250</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Nyama Choma">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898998/E-FOOD/pilau_elhlou.jpg" class="ordercontmainimg" alt="">
                         <h3>Pilau</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 133</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Pilau">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898998/E-FOOD/githeri_ounvkb.jpg" class="ordercontmainimg" alt="">
                         <h3>Githeri</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 96</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Githeri">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898998/E-FOOD/sukumawiki_asqumd.jpg" class="ordercontmainimg" alt="">
                         <h3>Sukuma Wiki</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 119</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Sukuma Wiki">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898998/E-FOOD/irio_fivkzm.jpg" class="ordercontmainimg" alt="">
                         <h3>Irio</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 99</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Irio">add</button>
                     </div>
                 </div>
-                <input type="submit" value="Order Entrees">
-            </form>
-            <form class="ordercontmainorder">
+            </div>
+            <div class="ordercontmainorder">
                 <h2>Desserts</h2>
                 <div class="ordercontmain">
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898985/E-FOOD/mandazi_reb1ej.jpg" class="ordercontmainimg" alt="">
                         <h3>Mandazi</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 25</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Mandazi">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898986/E-FOOD/kaimati_x4fypq.jpg" class="ordercontmainimg" alt="">
                         <h3>Kaimati</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 25</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Kaimati">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898985/E-FOOD/mutura_usvkzd.jpg" class="ordercontmainimg" alt="">
                         <h3>Mutura</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 25</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Mutura">add</button>
                     </div>
                 </div>
-                <input type="submit" value="Order Desserts">
-            </form>
-            <form class="ordercontmainorder">
+            </div>
+            <div class="ordercontmainorder">
                 <h2>Beverages</h2>
                 <div class="ordercontmain">
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898972/E-FOOD/kenyantea_ai83wh.jpg" class="ordercontmainimg" alt="">
                         <h3>Kenyan Tea</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 146</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Kenyan Tea">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898972/E-FOOD/tuskerbeer_qdgfdl.jpg" class="ordercontmainimg" alt="">
                         <h3>Tusker Beer</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 260</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Tusker Beer">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898972/E-FOOD/mangojuice_wzplta.jpg" class="ordercontmainimg" alt="">
                         <h3>Mango Juice</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 150</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
-                        </div>
+                        <button data-item="Mango Juice">add</button>
                     </div>
                     <div class="orderItem">
                         <img src="https://res.cloudinary.com/dlkqilyi0/image/upload/v1680898974/E-FOOD/masalachai_uqtz3s.jpg" class="ordercontmainimg" alt="">
                         <h3>Masala Chai</h3>
-                        <div class="orderItemMain">
-                            <div>
-                                <p class="priceTagOrder">Ksh. 148</p>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div>
-                                <p class="quantity">quantity</p>
-                                <input type="number" name="" id="">
-                            </div>
+                        <button data-item="Masala Chai">add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col">
+                    <form action="https://formsubmit.co/emmanuelnabwanashikuku@gmail.com" method="post">
+                        <label for="contactname">Name:</label>
+                        <input type="text" id="contactname" name="contactname" required><br>
+                        <label for="contactemail">Email:</label>
+                        <input type="email" id="contactemail" name="contactemail" required><br>
+                        <label for="contactmessage">Message:</label>
+                        <textarea id="contactmessage" name="contactmessage" required></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1KXwFhPNloQPOlhotUE708v8Bk7qZMm0&ll=0.5847499996396424%2C35.30786589999999&z=18" frameborder="0" allowfullscreen></iframe>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1761.1092763241045!2d35.30809337954685!3d0.5848086829275466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178105d36614da55%3A0xc04309be82e63718!2sK-5%20Cafe!5e1!3m2!1sen!2ske!4v1681473668621!5m2!1sen!2ske" frameborder="0" style="border:0" allowfullscreen=""></iframe> -->
                         </div>
                     </div>
                 </div>
-                <input type="submit" value="Order Beverages">
-            </form>
-        </div>
+            </div>
+        </section>
+        <footer>
+            <p>E-FOOD &copy;2023 </p>
+        </footer>
+        <script>
+            const orderzawatuForm = document.querySelector('#orderzawatu')
+            const orderItems = document.querySelectorAll('.orderItem')
+
+            orderItems.forEach(item => {
+                const addButton = item.querySelector('button')
+                const itemName = item.querySelector('h3').textContent
+                addButton.addEventListener('click', () => {
+                    orderzawatuForm.style.display = "flex"
+                    const inputExists = orderzawatuForm.querySelector(`input[name="${itemName}"]`)
+                    if (inputExists) {
+                        const inputNumber = parseInt(inputExists.value) + 1
+                        inputExists.value = inputNumber
+                        const paragraph = orderzawatuForm.querySelector(`p[data-item="${itemName}"]`)
+                        paragraph.textContent = `${itemName}: ${inputNumber}`
+                    } else {
+                        const hiddenInput = document.createElement('input')
+                        hiddenInput.setAttribute('type', 'hidden')
+                        hiddenInput.setAttribute('name', itemName)
+                        hiddenInput.setAttribute('value', '1')
+                        orderzawatuForm.appendChild(hiddenInput)
+                        const paragraph = document.createElement('p')
+                        paragraph.setAttribute('data-item', itemName)
+                        paragraph.textContent = `${itemName}: 1`
+                        orderzawatuForm.appendChild(paragraph)
+                    }
+                })
+            })
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="js/type.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
